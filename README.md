@@ -47,7 +47,7 @@ Make sure to run `npm install` after you've cloned the repo. Then run `npm run d
 
 # Prompt 1 - Frontend
 
-Create a Dashboard for staff to use to manage the backend of the site. The dashboard will need the pages listed below, and navigating between /orders and /customers should be taken care of by a navbar that is visible on all pages ***except*** the login page. Feel free to use UI libraries to make things look clean. Feel free to also add dummy UI elements to represent features a dashboard user would want. Below are the type of the customer, order, and order item objects you should use
+Create a Dashboard for staff to use to manage the backend of the site. The dashboard will need the pages listed below, and navigating between `/orders` and `/customers` should be taken care of by a navbar that is visible on all pages ***except*** the login page. Feel free to use UI libraries to make things look clean. Feel free to also add dummy UI elements to represent features a dashboard user would want. Below are the type of the customer, order, and order item objects you should use
 
 ## Types
 
@@ -86,7 +86,7 @@ price: float
 
 ## Login Page
 
-At the route /login, provide a prompt for the user to log in with a staff username and password. Don't worry about any authentication logic, just assume any information entered is correct. You can implement a dummy server endpoint or simulate a request with a timeout. When you "login" it will take you to the /orders page.
+At the route `/login`, provide a prompt for the user to log in with a staff username and password. Don't worry about any authentication logic, just assume any information entered is correct. You can implement a dummy server endpoint or simulate a request with a timeout. When you "login" it will take you to the /orders page.
 
 ## Customers and Customer Pages
 
