@@ -1,24 +1,36 @@
 <script>
+	import { each } from "svelte/internal";
 	import Navbar from "../Navbar.svelte";
 	import Sidebar from "../Sidebar.svelte";
+	import customer_data from "./customer_data.js"
+
+	let customers = [];
+
+	// Randomly generate 12 customers that will be used in the customer list
+	for (let i = 0; i < 12; i += 1) {
+		let new_customer = customer_data()
+		customers.push(new_customer)
+	}
+
 	import { Table, TableBody, TableBodyCell, TableBodyRow, TableHead, TableHeadCell} from 'flowbite-svelte';
 </script>
 
-<Navbar />
 
 <svelte:head>
 	<title>Customers</title>
 	<meta name="description" content="Revolution Cycle dashboard" />
 </svelte:head>
 
+<Navbar />
+<Sidebar/>
+
 <!-- Customer table -->
-<div>
-	<Sidebar/>
-	<h1 class="text-center text-5xl pt-10 pb-5">Customers</h1>
+<div class="my-3">
+	<h1 class="text-center text-5xl">Customers</h1>
 	<h4 class="text-center text-md">Entire list of customers</h4>
-	<section class="flex justify-center p-10">
-		<Table striped={true} hoverable={true}>
-		<TableHead>
+	<section class="flex justify-center my-5">
+		<Table striped={true} hoverable={true} class="border-2">
+		<TableHead class="border-2">
 			<TableHeadCell>Customer ID</TableHeadCell>
 			<TableHeadCell>First name</TableHeadCell>
 			<TableHeadCell>Last name</TableHeadCell>
@@ -27,16 +39,19 @@
 			<span class="sr-only"> Edit </span>
 			</TableHeadCell>
 		</TableHead>
-		<TableBody class="divide-y">
+
+		{#each customers as customer}
+		<TableBody>
 			<TableBodyRow>
-			<TableBodyCell>132</TableBodyCell>
-			<TableBodyCell>Nathan</TableBodyCell>
-			<TableBodyCell>Lapak</TableBodyCell>
-			<TableBodyCell>nathan.lapak@gmail.com</TableBodyCell>
-			<TableBodyCell>
+				<TableBodyCell>{customer.id}</TableBodyCell>
+				<TableBodyCell>{customer.firstName}</TableBodyCell>
+				<TableBodyCell>{customer.lastName}</TableBodyCell>
+				<TableBodyCell>{customer.email}</TableBodyCell>
+				<TableBodyCell>
 			</TableBodyCell>
 			</TableBodyRow>
 		</TableBody>
+		{/each}
 		</Table>
 	</section>
 </div>
