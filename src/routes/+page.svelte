@@ -13,6 +13,8 @@
   
 
 <Navbar></Navbar>
+
+<Sidebar />
 <section class="text-center">
 
   <div class="py-10">
@@ -42,7 +44,7 @@
         <Card class="text-center" padding='xl'>
           <h5 class="mb-2 text-3xl font-bold text-gray-900 dark:text-white">Dummy data </h5>
           <p class="mb-5 text-base text-gray-500 sm:text-lg dark:text-gray-400">
-            
+            Dummy UI element
           </p>
         </Card>
       </div>
@@ -52,5 +54,4 @@
 
   </div>
 </section>
-
 <Footer></Footer>
