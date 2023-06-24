@@ -1,23 +1,26 @@
 import { faker } from '@faker-js/faker';
+import order_data from '../orders/order_data';
 
 const customer_data = () => {
+
+    let order = order_data()
     let firstName = faker.person.firstName()
     let lastName = faker.person.lastName()
 
-
     return {
-        id: Math.floor(Math.random() * 1001),
+        id: Math.floor(Math.random() * 51),
         firstName: firstName,
         lastName: lastName,
-        phone: faker.phone.number(),
+        phone: faker.phone.number("780-###-####"),
         email: faker.internet.email({firstName, lastName}),
         address: faker.location.streetAddress(),
         city: faker.location.city(),
-        // province: fakerEN_CA.location.state(),
+        province: faker.location.state(),
         country: faker.location.country(),
         postal: faker.location.zipCode(),
-        // orders: Order[order]
+        orders: order.items
     }
+
 }
 
 export default customer_data

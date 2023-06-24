@@ -1,5 +1,5 @@
 <div>
-  <aside id="default-sidebar" class="absolute border-black-200 border-r-2 top-30 h-full left-0 w-30 transition-transform -translate-x-full lg:translate-x-0" aria-label="Sidebar">
+  <aside id="default-sidebar" class="absolute border-black-200 border-r-2 top-30 h-full left-0 lg:w-25 xl:w-64 transition-transform -translate-x-full lg:translate-x-0" aria-label="Sidebar">
     <div class="px-2 py-4 overflow-y-auto dark:bg-gray-800">
       <ul class="space-y-2 font-medium ">
         <li>
