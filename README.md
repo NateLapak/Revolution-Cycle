@@ -8,6 +8,14 @@ using Svelte, so I had to take my experience developing in React and use it to l
 between the two frameworks. I will cover some of the challenges I faced later on, but overall I think that Svelte is a good 
 framework that taught me a lot about web development in general.
 
+# Installation
+To run this project on your own device, follow these steps: 
+<br>
+1. Clone the repository using git Clone
+2. Cd (change directory) into /Technical-Interview-framework
+3. Use npm install to install all the packages used in this project
+4. Use npm run dev to run the website on your browser
+
 # Tech Stack
 Here are the technologies and libraries I used to create this website.
 
