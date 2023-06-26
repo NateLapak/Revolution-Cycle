@@ -19,7 +19,7 @@ Flowbite - UI component library based on Tailwind
 
 ```
 # Purpose and Challenges
-The purpose of this project for me was to have and 
+The purpose of this project was to 
 build experience working in another frontend framework 
 other than React. The biggest challenge I had was 
 using fake data to generate a list of customers and 
