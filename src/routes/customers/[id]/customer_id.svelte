@@ -58,7 +58,7 @@
             <TableBodyCell>Orders</TableBodyCell>
         </TableBodyRow>
         <TableBodyRow>
-            <TableBodyCell>{customer[0].orders[0]}</TableBodyCell>
+            <TableBodyCell><a href="/orders/{customer[0].orders[0]}">{customer[0].orders[0]}</a></TableBodyCell>
         </TableBodyRow>
     </TableBody>
 </Table>

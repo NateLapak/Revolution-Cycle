@@ -1,5 +1,6 @@
 import {faker} from '@faker-js/faker';
 
+// Genereates data for one item object using faker
 const order_item = () => {
     return {
         name: faker.commerce.product(),

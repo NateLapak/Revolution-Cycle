@@ -5,7 +5,7 @@
     import OrderId from './[id]/order_id.svelte';
     let orders = [];
 
-    // Generates 8 random orders
+    // Generates 10 random orders
     for (let i = 0; i < 10; i += 1) {
         let new_order = order_data();
         orders.push(new_order);

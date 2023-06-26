@@ -7,7 +7,7 @@
 	let customers = [];
 
 	// Randomly generate 12 customers that will be used in the customer list
-	for (let i = 0; i < 12; i += 1) {
+	for (let i = 0; i < 10; i += 1) {
 		let new_customer = customer_data();
 		customers.push(new_customer)
 	}
@@ -65,6 +65,7 @@
 			</TableBody>
 			{/each}
 		</Table>
+		
 	{/if}
 		
 </section>

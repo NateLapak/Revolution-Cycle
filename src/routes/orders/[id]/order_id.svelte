@@ -6,7 +6,7 @@
         isInvalid = true;
     }
 
-    import { Table, TableHead, TableHeadCell, TableBody, TableBodyRow, TableBodyCell} from 'flowbite-svelte';
+    import { Table, TableHead, TableHeadCell, TableBody, TableBodyRow, TableBodyCell, Button} from 'flowbite-svelte';
 </script>
 
 {#if isInvalid}
@@ -14,6 +14,7 @@
 {/if}
 
 {#if isInvalid == false}
+    
     <Table striped={true} hoverable={true} class="border-2">
         <TableHead class="border-2">
             <TableHeadCell>ID</TableHeadCell>
@@ -30,4 +31,5 @@
             </TableBodyRow>
         </TableBody>
     </Table>
+    <Button class="shadow text-center absolute m-5 top-80" color="blue" href="/customers/{order[0].customereID}">View Customer</Button>
 {/if}
