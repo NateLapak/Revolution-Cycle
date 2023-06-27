@@ -11,8 +11,8 @@ for (let i = 0; i < 5; i += 1) {
 // Generates one order object using faker
 const order_data = () => {
     return {
-        id: Math.floor(Math.random() * 26),
-        customerID: Math.floor(Math.random() * 26),
+        id: Math.floor(Math.random() * 26) + 1,
+        customerID: Math.floor(Math.random() * 26) + 1,
         total: faker.finance.amount(),
         items: item[0].name
     }

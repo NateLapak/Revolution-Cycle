@@ -1,12 +1,13 @@
 <script>
+    import { Table, TableHead, TableHeadCell, TableBody, TableBodyRow, TableBodyCell, Button} from 'flowbite-svelte';
     export let order;
     let isInvalid = false;
 
+    // If length is 0, order does not exist in database
     if (order.length == 0) {
         isInvalid = true;
     }
 
-    import { Table, TableHead, TableHeadCell, TableBody, TableBodyRow, TableBodyCell, Button} from 'flowbite-svelte';
 </script>
 
 {#if isInvalid}

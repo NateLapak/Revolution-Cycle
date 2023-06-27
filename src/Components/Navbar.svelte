@@ -1,5 +1,5 @@
 <script>
-  import { Navbar, NavBrand, NavLi, NavUl, NavHamburger } from 'flowbite-svelte'
+  import { Navbar, NavBrand, NavLi, NavUl, NavHamburger} from 'flowbite-svelte'
   import Logo from "$lib/images/RevolutionLogo.png"
 </script>
 

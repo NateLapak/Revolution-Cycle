@@ -9,7 +9,7 @@ const customer_data = () => {
     let lastName = faker.person.lastName()
 
     return {
-        id: Math.floor(Math.random() * 26),
+        id: Math.floor(Math.random() * 26) + 1,
         firstName: firstName,
         lastName: lastName,
         phone: faker.phone.number("780-###-####"),

@@ -2,6 +2,8 @@
     import { Table, TableHead, TableHeadCell, TableBody, TableBodyRow, TableBodyCell} from 'flowbite-svelte';
     export let customer
     let invalid = false;
+
+    // If length is 0, customer does not exist in database
     if (customer.length == 0) {
         invalid = true
     }

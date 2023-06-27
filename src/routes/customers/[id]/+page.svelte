@@ -1,9 +1,7 @@
 <script>
     import Navbar from "../../../Components/Navbar.svelte"
     import Sidebar from "../../../Components/Sidebar.svelte"
-	import CustomerTable from "../customer_table.svelte";
-
-
+	import CustomerTable from "../../../Components/Customer_table.svelte";
 </script>
 
 <svelte:head>

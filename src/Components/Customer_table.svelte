@@ -1,17 +1,23 @@
 <script>
 	import { page } from '$app/stores';
-	import customer_data from './customer_data';
+    import customer_data from '../routes/customers/customer_data';
 	import { Table, TableHead, TableHeadCell, TableBody, TableBodyRow, TableBodyCell} from 'flowbite-svelte';
-	import CustomerId from './[id]/customer_id.svelte';
+    import CustomerId from "../routes/customers/[id]/customer_id.svelte"
 
 	let customers = [];
-
-	// Randomly generate 12 customers that will be used in the customer list
-	for (let i = 0; i < 10; i += 1) {
+	
+	// Generates one customer with random data
+	const generate_customer = () => {
 		let new_customer = customer_data();
 		customers.push(new_customer)
 	}
 
+	// Randomly generate 10 customers that will be displayed in the customer table
+	for (let i = 0; i < 10; i += 1) {
+		generate_customer()
+	}
+
+	// Find the current path 
 	let url = $page.url.pathname;
 	let isCustomerId = false
 	let values_for_customer = [];
@@ -27,8 +33,6 @@
 			}
 		})
 	}
-
-
 </script>
 
 <!-- Customer table -->
